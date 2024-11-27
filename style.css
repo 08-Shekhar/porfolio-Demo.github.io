@@ -1,0 +1,168 @@
+ /* Global Styles */
+ body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+    color: #ecf0f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container */
+.container {
+    max-width: 850px;
+    width: 90%;
+    background: #2f3640;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #f1c40f;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #3498db;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+h2::before {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: #3498db;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    animation: grow 0.8s ease-in-out;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    padding: 10px;
+    background: #34495e;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+li:hover {
+    transform: scale(1.05);
+    background: #3a556b;
+}
+
+b {
+    color: #f1c40f;
+}
+
+/* Image Styling */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 250px;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
+}
+
+/* Horizontal Line */
+hr {
+    border: 0;
+    height: 2px;
+    background: #f1c40f;
+    margin: 30px 0;
+    opacity: 0.8;
+    animation: slideIn 1s ease;
+}
+
+/* Contact Section */
+.contact {
+    background: #1e272e;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #ecf0f1;
+    margin-top: 20px;
+    animation: fadeIn 1.5s ease;
+}
+
+.contact b {
+    color: #e67e22;
+}
+
+.contact p {
+    margin: 10px 0;
+}
+
+/* Button */
+a.button {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #ffffff;
+    background: #3498db;
+    padding: 12px 25px;
+    border-radius: 50px;
+    margin-top: 20px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+a.button:hover {
+    background: #2980b9;
+    transform: translateY(-3px);
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes grow {
+    from {
+        width: 0;
+    }
+    to {
+        width: 60px;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
